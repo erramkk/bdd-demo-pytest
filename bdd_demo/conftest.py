@@ -4,9 +4,8 @@ from pdb import set_trace
 
 
 @pytest.fixture
-def browser():
-	driver = Driver().get_browser("chrome")
-	set_trace()
-	yield driver
-	driver.close()
+def driver():
+	browser = Driver().get_browser("firefox")
+	yield browser
+	browser.close()
 
