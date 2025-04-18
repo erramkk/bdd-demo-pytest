@@ -1,8 +1,9 @@
 Name: Demo BDD Test with Selenium
 
 on:
-  schedule:
-    - cron: '5 * * * 1-5'
+  push:
+    branches:
+      - main
 
 jobs:
   run-demo-test:
