@@ -5,9 +5,9 @@ on:
     - cron: '5 * * * 1-5'
 
 jobs:
-		run-demo-test:
-  runs-on: ubuntu-latest
-  
+  run-demo-test:
+    runs-on: ubuntu-latest
+
   steps:
     - name: Checkout code
       uses: actions/checkout@v4
