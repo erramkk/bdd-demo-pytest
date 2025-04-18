@@ -18,6 +18,7 @@ class Driver:
 		if browser_type.lower() == "chrome":
 			options = chrome_options()
 			options.add_argument("--disable-dev-shm-using") 
+			options.add_argument("--headless=new")
 			driver = webdriver.Chrome(
 				service=chromeService(ChromeDriverManager().install()),
 				options=options
