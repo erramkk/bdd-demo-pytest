@@ -21,5 +21,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Setup Geckodriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y firefox-geckodriver
+          export PATH=$PATH:/usr/bin
+
       - name: Run demo test
         run: pytest -k 'valid_login'
