@@ -1,4 +1,4 @@
-Name: Demo BDD Test with Selenium
+name: Demo BDD Test with Selenium
 
 on:
   push:
