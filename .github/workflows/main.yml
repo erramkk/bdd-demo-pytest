@@ -24,7 +24,7 @@ jobs:
       - name: Setup Geckodriver
         run: |
           sudo apt-get update
-          sudo apt-get install -y firefox-geckodriver
+          sudo apt-get install -y firefox
           export PATH=$PATH:/usr/bin
 
       - name: Run demo test
